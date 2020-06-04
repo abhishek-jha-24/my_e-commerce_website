@@ -1,0 +1,76 @@
+<style>
+    img {
+      width: 100%;
+    }
+</style>
+
+
+
+<h1> Search results... for name: <%= items.name %></h1>
+<br>
+</br><br>
+</br>
+<ul>
+
+  
+
+	  <font size="+2">
+
+   
+      <p class="get"><br/>Name: <%= items.name %><br/>
+      <br/>Price: <%= items.price %><br/>
+      <br/>_id: <%= items._id %><br/>
+      <br>
+      </br>
+
+      
+
+
+      <% if(file){ %>
+
+
+
+	      <% if(file.isImage){ %>
+
+
+
+		      <img src="/products/image/<%= file.filename %>" alt="" style="width:400px;height:400px;">
+	      <% } else { %>
+
+		      <%= file.filename %>
+	      <% } %>
+
+      <% } else { %>
+
+	      <p> No Files</p>
+      <% } %>
+
+      <a href="/orders/Add-New-Order/<%= items._id %> ">BUY ?</a>
+
+
+
+
+
+      <% if(user.email == items.email){ %>
+        <a href="/products/Delete-One-Product/<%= items._id %> ">View Details</a>
+      <% } else { %>
+    
+      <% } %>
+
+      </p>
+
+
+
+
+
+
+
+
+
+
+      </font>
+ 
+
+
+  
+</ul>

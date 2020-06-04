@@ -1,0 +1,46 @@
+
+<br>
+</br>
+<h1> List of all orders present in the system...</h1>
+<br>
+</br>
+
+
+<ul>
+  <% for(var person of items) { %>
+  <li>
+	  <font size="+2">
+
+      <p class="get"><br/>Name: <%= person.product.name %><br/>
+      <br/>Quantity: <%= person.quantity %><br/>
+
+      <br/>_id: <%= person._id %><br/></p></li>
+
+      <a href="/orders/Get-Product/<%= person._id %> ">View order</a>
+
+      </font>
+      <% } %>
+  
+
+
+  
+</ul>
+<br>
+</br>
+
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br><br>
+</br>

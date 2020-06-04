@@ -1,0 +1,108 @@
+body {
+	background: url('/images/6.jpg') no-repeat;
+	font-family: Impact, Charcoal, sans-serif;
+
+
+	background-size: 100% 100%;
+
+	font-family: Arial;
+	color: blue;
+	z-index: 3;
+}
+
+p.get{
+	color: black;
+	font-size: 25px;
+	font-family: "Times New Roman", Times, serif;
+	background-color: #e5e4d7;
+	padding: 0px 25px 10px;
+	padding-right: 0px;
+	font-weight: bolder;
+
+	border-color: black;
+	line-height: 0.8;
+	border-width: 5px;
+	border-style: solid;
+}
+
+ul.dropdown{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+
+}
+
+ul.dropdown li.dropdown {
+
+	float: left;
+	color: white;
+	width: 200px;
+	height: 40px;
+	opacity: .6;
+	background-color: blue;
+	
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	margin-right: 2px;
+	z-index: 3;
+	
+
+}
+ul.dropdown li.dropdown a {
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+ul.dropdown li.dropdown a:hover {
+	background-color: green;
+	z-index: 3;
+
+}
+
+ul.dropdown li.dropdown ul.dropdown li.dropdown {
+	display: none;
+	z-index: 3;
+}
+
+
+ul.dropdown li.dropdown:hover ul.dropdown li.dropdown {
+	display: block;
+	z-index: 3;
+}
+
+div.features {
+	line-height: 5px;
+	color: white;
+	font-weight: bolder;
+
+}
+a.started {
+	color: green;
+	font-weight: bolder;
+	font-size: 25px;
+	font-style: italic;
+}
+
+.started {
+	font-family: Impact, Charcoal, sans-serif;
+	color: white;
+	font-weight: bolder;
+
+}
+.Home {
+	background: url('/images/5.jpg') no-repeat;
+	color: black;
+	font-weight: bolder;
+}
+
+a.Home {
+	color: yellow;
+	font-weight: bolder;
+	font-size: 35px;
+}
+h3 {
+	color: red;
+	font-weight: bolder;
+}

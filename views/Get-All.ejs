@@ -1,0 +1,41 @@
+
+<br>
+</br>
+
+
+
+
+<ul style = "list-style-type: none">
+  <% for(var person of items) { %>
+  <li>
+	  <font size="+2">
+
+      <p class="get"><br/>Name: <%= person.name %><br/>
+      <br/>Price: <%= person.price %><br/>
+      <br>
+      </br>
+
+      <img src="/products/image/<%= person.filename %>" alt="" style="width:400px;height:400px;">
+
+
+      <a href="/orders/Add-New-Order/<%= person._id %>">Buy</a>
+
+      <br>
+      </br>
+
+     
+
+
+
+      
+
+      </p></li>
+
+      </font>
+      <% } %>
+  
+
+
+  
+</ul>
+

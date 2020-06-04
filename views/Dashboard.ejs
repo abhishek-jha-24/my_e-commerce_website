@@ -1,0 +1,20 @@
+<form action="/orders/Add-New-Order" method="post">
+        <div class="input">
+          <label for="productId">productId</label>
+          <input type="text" id="productId" name="productId">
+        </div>
+
+        <div class="form-group">
+          <label for="quantity">quantity</label>
+          <input
+            type="text"
+            id="quantity"
+            name="quantity"
+            class="form-control"
+            placeholder="Enter quantity"
+            value="<%= typeof quantity != 'undefined' ? quantity : '' %>"
+          
+          />
+        
+        <button type="submit" class="btn btn-primary btn-block">Add Your Product?</button>
+</form>
